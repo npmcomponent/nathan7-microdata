@@ -1,23 +1,13 @@
 {
-  "name": "microdata",
-  "repository": { "type": "git", "url": "git://github.com/nathan7/microdata.git" },
+  "name": "nathan7-microdata",
   "description": "a component for extracting HTML5 microdata in the browser",
   "version": "1.1.1",
-  "keywords": ["microdata", "html5"],
+  "keywords": [
+    "microdata",
+    "html5"
+  ],
   "dependencies": {
-    "query": "git://github.com/component/query"
+    "component-query": "git://github.com/npmcomponent/component-query.git"
   },
-  "scripts": {
-    "pretest": "component install",
-    "test": "component build --dev --standalone microdata && mocha-phantomjs test/test.html && browserify . -s microdata -o build/build.js && mocha-phantomjs test/test.html"
-  },
-  "devDependencies": {
-    "component": "~0.11.0",
-    "mocha-phantomjs": "~1.1.2",
-    "browserify": ">=2.12.0 <3.0.0"
-  },
-  "author": "Nathan Zadoks",
-  "license": "MIT",
-  "main": "index.js",
-  "readmeFilename": "Readme.md"
+  "license": "MIT"
 }
